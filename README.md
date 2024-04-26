@@ -40,32 +40,43 @@ Nesse desafio deve-se:
 As regras são:
 
 Função sacar deve ser keyword only,  
-Deve ter: saldo, valor, extrato, limite, numero de saques, limite de saques.  
+Deve ter:  
+*saldo,  
+*valor,  
+*extrato,  
+*limite,  
+*numero de saques,  
+*limite de saques.  
 Retorna: saldo e extrato
 
 Função depositoar deve ser positional only,  
-Deve ter: saldom valor, extrato.  
+Deve ter: 
+*saldo,  
+*valor,  
+*extrato.  
 Retorna: saldo e extrato.  
 
 Função extrato deve ser positional only e keyword only,  
-Positional only: saldo,  
-Keyword only: extrato.  
+Positional only:  
+*saldo,  
+
+
 
 Função criar usuário:  
 Deve armazenar os usuários em uma lista,  
 Usuário deve ter:  
-    nome,  
-    data de nascimento,  
-    cpf (apenas números),  
-    logradouro (logradouro, nro - bairro - cidade/UF),  
-    Não deve armazenar 2 cpfs iguais.
+    *nome,  
+    *data de nascimento,  
+    *cpf (apenas números),  
+    *logradouro (logradouro, nro - bairro - cidade/UF),  
+    *Não deve armazenar 2 cpfs iguais.
 
 Função criar conta
 Deve armazenar contas em uma lista,  
 conta deve ter:  
-    agencia,  
-    numero da conta,  
-    usuario.  
-A conta é sequencial inciiando em 1,
-Agencia é fixa (0001),  
-Usuário pode ter mais de uma conta mas uma conta pode ser de apenas um usuário.  
+    *agencia,  
+    *numero da conta,  
+    *usuario.  
+*A conta é sequencial inciando em 1,
+*Agencia é fixa (0001),  
+*Usuário pode ter mais de uma conta mas uma conta pode ser de apenas um usuário.  
