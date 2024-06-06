@@ -1,9 +1,8 @@
 ## Introdução a POO
 
 POO (**Programação Orientade a Objetos**) é um paradigma de programação, ou seja, uma forma de
-estruturar os programas. A ideia é abstrair problemas em objetos do mundo real, onde os dois elementos chaves são:
-**clase** e **objeto**.  
-**Classe**: Define as caacterísticas e comportamentos de um objeto, mas não pode ser usada por si só.  
+estruturar os programas. A ideia é abstrair problemas em objetos do mundo real, onde os dois elementos chaves são: **classe** e **objeto**.  
+**Classe**: Define as características e comportamentos de um objeto, mas não pode ser usada por si só.  
 **Objeto**: É uma instância da classe, ou seja, um objeto dessa classe.  
  Veja um exemplo em Python:  
  **Clase**  
@@ -49,9 +48,10 @@ def __del__(self):
 ```
 E por fim, seria chamado assim:
 
+```Python
 c = Cachorro(parametros)
 del c
-
+```
 ## Herança
 
 É a capacidade de uma classe filha herdar características e comportamentos da classe pai.
@@ -77,4 +77,4 @@ classe.__mro__
 Ou
 print(Classe.mro())
 ```
-Que irá trazer o método de resolução das Classes.
+Que irá trazer a ordem de resolução das Classes.
