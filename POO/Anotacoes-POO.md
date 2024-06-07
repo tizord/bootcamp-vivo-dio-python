@@ -86,16 +86,17 @@ Em Python não temos palavras reservas porém usamos convenção no nome do recr
 Publico: Acessível fora da classe,  
 Privado: Acessível apenas dentro da classe.  
 
+```Python
 class Pessoa():
     def __init__(self, nome, idade):
         self.nome = nome
         self._idade = idade
     
-    def _
+```
 
 Apesar disso, o Python deixa acessar e manipular o recurso, mas por convenção não se deve mexer. Para isso, deve-se ter métodos para manipular os atributos privados. Em Java temos os métodos **getters** e **setters**
 
-Podemos usar o **property()** que permite criar atributos gerenciados (conhecidos como propredades) quando necessitar modificar sua implmentação interna sem alterar a API pública da classe. Olha como podemos usar:
+Podemos usar o **property()** que permite criar atributos gerenciados (conhecidos como propredades) quando necessitar modificar sua implementação interna sem alterar a API pública da classe. Olha como podemos usar:
 
 ```Python
 class Foo:
@@ -128,13 +129,13 @@ A classe Foo tem um "método" x que faria essa adição, e quando usamos o @prop
 
 ### Variáveis de classe, variáveis de instância, métodos de classe e métodos de instância
 
-Atributo de classe: É compartilhado pelos objetos da classe,  
-Atributo de instância: São diferentes para cada objeto.  
+**Atributo de classe:** É compartilhado pelos objetos da classe,  
+**Atributo de instância:** São diferentes para cada objeto.  
 Métodos de classe: Estão ligados à classe e não ao objeto, eles têm acesso ao estado da classe, são utilizados para criar **métodos de fábrica**  
-Método estático: Não recebe um primeiro argumento explícito, é um método vinculado à classe e não ao objeto da classe, ele não pode acessar ou modificar o estado da classe. São utilizados para criar **funções utilitárias**, ou seja, são funções que não dependem da classe necessariamente. Exemplo:  
+**Método estático:** Não recebe um primeiro argumento explícito, é um método vinculado à classe e não ao objeto da classe, ele não pode acessar ou modificar o estado da classe. São utilizados para criar **funções utilitárias**, ou seja, são funções que não dependem da classe necessariamente. Exemplo:  
 
 Vamos avaliar dois cenários:
-1) a classe Pessoa que contém um método para criar um objeto a partir da data de nascimento, que recebe um objeto pessoa e terá que instânciar outro objeto pessoa, o que não é ideal.
+1) A classe Pessoa que contém um método para criar um objeto a partir da data de nascimento, que recebe um objeto pessoa e terá que instânciar outro objeto pessoa, o que não é ideal.
 
 Repare que no construtor de pessoa, temos que passar nome e idade = None, caso contrário o método não iria funcionar uma vez que o construtor pede 2 argumentos.
 
