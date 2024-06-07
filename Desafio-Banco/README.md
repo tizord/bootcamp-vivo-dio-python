@@ -1,4 +1,4 @@
-### Desafio 1
+## Desafio 1
 
 No desafio 1, cria-se um sistema bancário simples que deve possuir:  
 * Saque,  
@@ -19,7 +19,7 @@ Todas as operações (Saque e Depósito) devem ser armazenados em uma variável 
 Deve-se utilizar o modelo dado.
 
 
-### Desafio 2
+## Desafio 2
 
 No desafio 2 deve-se otimizar o sistema bancário, deixando-o mais modularizado, através da utilização de funções.
 
@@ -75,3 +75,12 @@ conta deve ter:
 * A conta é sequencial inciando em 1, 
 * Agencia é fixa (0001), 
 * Usuário pode ter mais de uma conta mas uma conta pode ser de apenas um usuário.  
+
+
+## Desafio 3
+
+Iniciar modelagem do sistema bancário em POO. Deve-se adicionar classes para cliente e as operações bancárias: depósito e saque, seguindo o UML:
+
+![alt text](image.png)
+
+O desafio extra é: Fazer a criação do menu.

@@ -6,7 +6,7 @@ Códigos desenvolvidos durante a realização do Bootcamp Vivo.
 
 ### Desafio - Construindo Sistema Bancário
 
-Desafio 1 (d1): Usou-se apenas as estruras simples do Python
+Desafio 1 (d1): Usou-se apenas as estruras simples do Python  
 Desafio 2 (d2): Usou-se funções
 
 ### POO (Programação Orientada a Objetos)
