@@ -5,13 +5,13 @@
 1) Adicionar PPA para instalar a versão mais estável do Git
 
 ```console
-sudo add-apt-repository pp:git-core/ppa
+sudo add-apt-repository ppa:git-core/ppa
 ```
 
 2) Atualizar o OS para a versão mais nova e estável
 
 ```console
-sudo apt-get update git
+sudo apt-get update
 ```
 
 3) Instalando o Git
@@ -26,8 +26,8 @@ git --version
 
 ### Configurando o Git
 
-O comando git config traz todas as opções de configurações. Entre as configurações temos algumas opções, entre elas:  
-* --global: Referente ao usuário,  
+O comando git config traz todas as opções de configurações. Entre as configurações temos algumas opções, onde algumas são:  
+* --global: Referente ao usuário (do computador),  
 * --system: Referente ao sistema (e todos os usuários),
 * --local: Referente ao repositório
 
@@ -38,7 +38,7 @@ git config --global user.name "Nome"
 git config --global user.email "email@email.com"
 ```
 
-Para achar o nome da branch padrão e para trocar o nome são os comandos, respectivamente:
+Para achar o nome da branch padrão e para trocar o nome usa-se os comandos abaixo, respectivamente:
 
 ```console
 git config init.defaultBranch
@@ -58,14 +58,15 @@ Onde altera-se o --global por --system ou --local
 
 No **github**:
 
-setting > developer setting > personal access token > tokens (classic) > generate new token (claasic)  
+setting > developer setting > personal access token > tokens (classic) > generate new token (classic)  
+
 Um token vai ser gerado, deve ser copiado e colado no campo "senha", no Bash.  
-O token pode ter validade e para não ter que ficar inserindo o token podemos fazer os seguintes passos:  
-Se a máquina for compartilhada e você deseja salvar o token temporariamente:
+O token pode ter validade e para não ter que ficar inserindo o token sempre podemos fazer os seguintes passos:  
+1) Se a máquina for compartilhada e você deseja salvar o token temporariamente:
 ```console
 git config credential.helper cache
 ```
-Se você é o único usuário da máquina e quer salvar  
+2) Se você é o único usuário da máquina e quer salvar  
 
 ```console
 git config --global credential.helper store
@@ -94,8 +95,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat id_ed25519.pub
 ```
-Deve-se copiar o resultado do último comando e:
-Acessa o **github**:  
+Deve-se copiar o resultado do último comando e, após, acessar o **github**:  
 setting > SSH and GPG keys > New SSH key  
 Colar a chave no campo "key"
 
@@ -108,11 +108,10 @@ git init
 
 Para clonar um repositório (1) ou para clonar um repositorio e alterar seu nome (2) ou então para clonar uma branch de um determinado repositório (3) faz-se, respectivamente:
 ```console
-git clone URL
-git clone URL novo_nome
-git clone URL --branch nome_branch --single-branch
+(1) git clone URL
+(2) git clone URL novo_nome
+(3) git clone URL --branch nome_branch --single-branch
 ```
-Para clonar uma determinada
 
 Para se conectar ao repositório remoto:  
 ```console
