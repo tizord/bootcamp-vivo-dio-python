@@ -231,3 +231,32 @@ git stash pop/apply
 Por fim, deve-se ler a documentação do git, disponivel em:
 [Documentação Git](git-scm.com/docs)
 [Documentação - Book](git-scm.com/book/en/v2)
+
+### Contribuindo com outros repositórios
+
+Para contribuir com outros repositórios, primeiro devemos fazer um **fork** para nossa conta. O fork é feito no próprio github. Depois de fazer o fork, nós fazer o clone do repositório para o nosso computador:
+
+```console
+git clone link
+```
+
+Após, nos devemos fazer o comando
+
+```console
+git remote add upstream link_repo_original
+```
+
+Após, para trazer as atualizações do repo original:
+
+```console
+git pull upstream branch
+```
+
+
+
+
+
+
+
+
+Para que possamos ter todas as atualizações no repo original.
