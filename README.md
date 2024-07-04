@@ -14,3 +14,7 @@ Desafiu 3 (d3): Fazer o sistema bancário usando POO.
 
 Códigos feitos durante o estudo de POO.
 
+### Data-Hora-Arquivos-Pacotes
+
+Códigos e anotações feitos durante o estudo dessa trilha.
+

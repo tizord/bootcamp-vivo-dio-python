@@ -76,13 +76,13 @@ for i in MeuIterador(numeros=[1, 2, 3]):
  Implementar as seguintes funcionalidades no sistema:
 
  - Decorador de Log:
-Implemente umd ecorador que seja aplicado a todas as funções de transações (depósito, saque, criação de conta, etc).
+Implemente um decorador que seja aplicado a todas as funções de transações (depósito, saque, criação de conta, etc).
 Esse decorador deve registrar (printar) a data e hora de cada transação, bem como o tipo de transação.
  
  - Gerador de relatórios
-Crie um gerador que permita iterar sobre as transações de uma cotna e retornar, uma a uma, as transações que foram realziadas.
+Crie um gerador que permita iterar sobre as transações de uma cotna e retornar, uma a uma, as transações que foram realizadas.
 Esse gerador deve também te rum forma de filtrar as transações baseado em seu tipo.
 
  - Iterador personalizado
-Implementear um iterador personalizado ContaIterador que permita iterar sobre todas as contas do banco, retornando informações básicas de cada conta (número,s aldo atual, etc.)
+Implementear um iterador personalizado ContaIterador que permita iterar sobre todas as contas do banco, retornando informações básicas de cada conta (número, saldo atual, etc.)
 '''
