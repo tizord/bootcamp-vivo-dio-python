@@ -429,3 +429,45 @@ poetry remove numpy
 O poetry gera um arquivo .toml. No momento que inicializamos o poetry ele faz uma série de perguntas, tudo via CLI. O comando **poetry install** cria o ambiente virtual e instala as bibliotecas definidas. O poetry, através do **remove** remove todos os pacotes aninhados de uma só vez. A documentação do poetry está disponível em:
 
 [Poetry](https://python-poetry.org/docs/)
+
+# Boas Práticas
+
+PEP 8: É um guia de estilo para codificação em Python, ele inclui convenções sobre nomes de variáveis, uso de espaços em branco, comprimento da linha e muitras outras coisas que ajuadm a  manter o código consistente e legível.
+
+[PEP 8](peps.python.org/pep-0008/)
+
+## As principais recomendações:
+
+* Usar 4 espaços para identação,
+* Limitar as linhas a 79 caracteres,
+* Usar **snake_case** para nomes de variávies e funções,
+* Usar **CamelCase** para classes
+
+Para ajudar a seguir as recomendações da PEP 8, podemos usar ferramentas de estilos como o **flake8**.
+
+```console
+pip install flake8
+flake8 meu_script.py
+```
+
+O flake8 tem como padrão o limite de 79 caracteres para um linha. Atualmente utiliza-se 110 ou 120 linhas. Isso pode ser alterado da seguinte forma:
+
+```console
+flake8 --max-line-length=120 meu_script.py
+```
+
+O flake8, depois de executado, percorre o script informando os erros, mas tem o inconveniente de ter que, além de rodar o comando, entrar no script e adequar. Mas temos outras opção, o **Black**. O **Black** é uma ferramenta de formatação de código Python que segue a filosofia "formato único"; Ele reformata todo o script em um estilo consistente, simplificando a tarefa de manter o código em conformidade com a PEP 8.
+
+```console
+pip install black
+black meu_script.py
+```
+
+Outra ferramenta é o **isort**, que serve para classificar as importações alfabeticamente e separá-las automaticamente em seções.
+
+```console
+pip install isort
+isort meu_script.py
+```
+
+Todas essas ferramentas, podem ser instaladas diratamente no vscode, através da seção de extensões.
