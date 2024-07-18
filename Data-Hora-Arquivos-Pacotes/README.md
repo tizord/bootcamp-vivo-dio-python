@@ -395,7 +395,7 @@ Agora vamos ver os principais comandos do pip
 
 ## pipenv
 
-O pipenv pe uma ferramenta de gerenciamento de pacotes que **combina a gestão de dependências com a criação de ambiente virtual** para seus projetos e adiciona/remove pacotes automaticamente do arquivo Pipfile, conforme você instala e desinstala pacotes.
+O pipenv é uma ferramenta de gerenciamento de pacotes que **combina a gestão de dependências com a criação de ambiente virtual** para seus projetos e adiciona/remove pacotes automaticamente do arquivo Pipfile, conforme você instala e desinstala pacotes.
 O pipenv deve ser instalado globalmente, e deve ser instalado para cada versão do python que você tiver na máquina.
 
 ```console
